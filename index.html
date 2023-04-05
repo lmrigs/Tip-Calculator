@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tip Calculator</title>
+    <meta name="description" content="Calculate your tip with this easy calculator.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="body-content">
+        <div class="header">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="bill-input">
+            <h3>
+                What Was Your Total Bill?
+            </h3>
+            <form>
+                <label for="bill-amount" id="bill-label">$</label>
+                <input id="bill-amount" type="number" step="0.01" min="0.01">
+            </form>
+        </div>
+        <div class="tip-amount">
+            <h3>Pick Your Tip %</h3>
+            <div id="percentages">
+                <button class="tip-box" id="ten">10</button>
+                <button class="tip-box" id="fifteen">15</button>
+                <button class="tip-box" id="eighteen">18</button>
+                <button class="tip-box" id="twentyfive">25</button>
+                <button class="tip-box" id="fifty">50</button>
+            </div>
+        </div>
+        <div class="totals">
+            <h3>Total Tip</h3>
+            <div class="output" id="tip-output"></div>
+            <h3>Total Bill With Tip</h3>
+            <div class="output" id="total-output"></div>
+        </div>
+        <script src="main.js" async defer></script>
+    </div>
+</body>
+
+</html>

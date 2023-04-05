@@ -1,0 +1,114 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font: bold 40px arial, sans-serif;
+}
+
+h3 {
+    font: 25px arial, sans-serif;
+}
+
+div.body-content {
+    padding: 30px 20px;
+    border: 1px solid black;
+    background-color: lightcoral;
+    border-radius: 15px;
+    width: 300px;
+}
+
+div.body-content,
+div.totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    border-radius: 15px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+label {
+    font: 20px arial, sans-serif;
+}
+
+button {
+    border-radius: 5px;
+    background-color: white;
+    height: 30px;
+    width: 68%;
+    margin: 5px;
+    font-size: 20px;
+}
+
+button:active {
+    background-color: rgb(164, 139, 244);
+    transform: scale(1.25);
+}
+
+button:focus {
+    background-color: rgb(164, 139, 244);
+    transform: scale(1.25);
+}
+
+div.tip-amount {
+    text-align: center;
+}
+
+div.output {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+    height: 25px;
+}
+
+div.totals {
+    font: 18px arial, sans-serif;
+}
+
+#total-output {
+    margin-bottom: 25px;
+    font: 18px arial, sans-serif;
+    background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+
+    div.body-content {
+        padding: 30px 20px;
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 500px;
+    }
+
+    div.tip-amount {
+        width: 90%;
+    }
+
+    div#percentages {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+}
